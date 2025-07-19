@@ -1,0 +1,16 @@
+version: '3.8'
+
+include:
+  - compose/java.yaml
+  - compose/python.yaml
+  - compose/go.yaml
+  - compose/rust.yaml
+  - compose/cpp.yaml
+  - compose/nodejs.yaml
+
+networks:
+  benchmark-network:
+    driver: bridge
+
+volumes:
+  benchmark-data:

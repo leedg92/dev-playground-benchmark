@@ -1,0 +1,23 @@
+services:
+  python-service:
+    build:
+      context: ./services/python
+      dockerfile: Dockerfile
+    ports:
+      - "8022:8000"
+    environment:
+      - PYTHONOPTIMIZE=1
+      - PYTHONUNBUFFERED=1
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+        reservations:
+          memory: 512M
+    networks:
+      - benchmark-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

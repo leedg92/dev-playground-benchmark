@@ -1,0 +1,23 @@
+services:
+  nodejs-service:
+    build:
+      context: ./services/nodejs
+      dockerfile: Dockerfile
+    ports:
+      - "8026:8080"
+    environment:
+      - NODE_ENV=production
+      - NODE_OPTIONS=--max-old-space-size=1800
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+        reservations:
+          memory: 512M
+    networks:
+      - benchmark-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

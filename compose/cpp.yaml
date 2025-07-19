@@ -1,0 +1,20 @@
+services:
+  cpp-service:
+    build:
+      context: ./services/cpp
+      dockerfile: Dockerfile
+    ports:
+      - "8025:8080"
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+        reservations:
+          memory: 512M
+    networks:
+      - benchmark-network
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
