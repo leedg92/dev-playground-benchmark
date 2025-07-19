@@ -92,7 +92,8 @@ make status
 make logs-java       # Java 서비스 로그
 make logs-python     # Python 서비스 로그
 make logs-go         # Go 서비스 로그
-make logs-c++        # C++ 서비스 로그
+make logs-rust       # Rust 서비스 로그
+make logs-cpp        # C++ 서비스 로그
 make logs-js         # node.js 서비스 로그
 
 # 서비스 재시작
