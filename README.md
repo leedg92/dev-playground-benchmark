@@ -18,7 +18,7 @@
 
 ## 🛠 기술 스택
 
-### 언어별 마이크로서비스(+FrameWork)
+### 언어/프레임워크 별 마이크로서비스
 - **Java**: Spring Boot
 - **Python**: FastAPI
 - **Go**: Gin Framework
