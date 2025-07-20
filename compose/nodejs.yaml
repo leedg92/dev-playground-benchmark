@@ -1,7 +1,7 @@
 services:
   nodejs-service:
     build:
-      context: ./services/nodejs
+      context: ../services/nodejs
       dockerfile: Dockerfile
     ports:
       - "8026:8080"

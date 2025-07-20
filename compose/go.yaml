@@ -1,7 +1,7 @@
 services:
   go-service:
     build:
-      context: ./services/go
+      context: ../services/go
       dockerfile: Dockerfile
     ports:
       - "8023:8080"

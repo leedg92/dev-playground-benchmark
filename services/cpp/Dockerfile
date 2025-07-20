@@ -1,7 +1,7 @@
 FROM gcc:11-slim AS builder
 
 # 필요한 도구 설치
-RUN apt-get update && apt-get install -y cmake build-essential && \
+RUN apt-get update && apt-get install -y cmake build-essential git && \
     rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app

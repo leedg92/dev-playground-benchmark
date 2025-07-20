@@ -1,7 +1,7 @@
 services:
   java-service:
     build:
-      context: ./services/java
+      context: ../services/java/
       dockerfile: Dockerfile
     ports:
       - "8021:8080"

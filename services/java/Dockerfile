@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y maven && \
     mvn clean package -DskipTests && \
     rm -rf ~/.m2/repository
 
-FROM openjdk:17-jre-slim
+FROM openjdk:17-jdk-slim
 
 # 성능 측정을 위한 도구 설치
 RUN apt-get update && apt-get install -y curl procps && \

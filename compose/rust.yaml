@@ -1,7 +1,7 @@
 services:
   rust-service:
     build:
-      context: ./services/rust
+      context: ../services/rust
       dockerfile: Dockerfile
     ports:
       - "8024:8080"

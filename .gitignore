@@ -1,0 +1,297 @@
+# ==================================
+# 다중 프로그래밍 언어 벤치마크 프로젝트
+# ==================================
+
+# 벤치마크 결과 및 로그 파일
+benchmark-results/
+*.benchmark
+*.perf
+*.prof
+benchmark_*.json
+benchmark_*.csv
+performance_logs/
+execution_*.log
+
+# ==================================
+# Java (Spring Boot)
+# ==================================
+services/java/target/
+services/java/.mvn/wrapper/maven-wrapper.jar
+services/java/.mvn/wrapper/maven-wrapper.properties
+services/java/mvnw
+services/java/mvnw.cmd
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+replay_pid*
+.classpath
+.project
+.settings/
+.factorypath
+.apt_generated
+.apt_generated_tests
+
+# ==================================
+# Python (FastAPI)
+# ==================================
+services/python/__pycache__/
+services/python/*.py[cod]
+services/python/*$py.class
+services/python/*.so
+services/python/.Python
+services/python/build/
+services/python/develop-eggs/
+services/python/dist/
+services/python/downloads/
+services/python/eggs/
+services/python/.eggs/
+services/python/lib/
+services/python/lib64/
+services/python/parts/
+services/python/sdist/
+services/python/var/
+services/python/wheels/
+services/python/pip-wheel-metadata/
+services/python/share/python-wheels/
+services/python/*.egg-info/
+services/python/.installed.cfg
+services/python/MANIFEST
+services/python/.coverage
+services/python/.pytest_cache/
+services/python/.tox/
+services/python/.nox/
+services/python/coverage.xml
+services/python/*.cover
+services/python/*.py,cover
+services/python/.hypothesis/
+services/python/.mypy_cache/
+services/python/.pyre/
+services/python/.pytype/
+services/python/cython_debug/
+services/python/venv/
+services/python/env/
+services/python/.venv/
+services/python/.env/
+
+# ==================================
+# Go (Gin Framework)
+# ==================================
+services/go/vendor/
+services/go/*.exe
+services/go/*.exe~
+services/go/*.dll
+services/go/*.so
+services/go/*.dylib
+services/go/*.test
+services/go/*.out
+services/go/go.work
+services/go/go.work.sum
+services/go/.air.toml
+services/go/tmp/
+
+# ==================================
+# Rust (Actix-web)
+# ==================================
+services/rust/target/
+services/rust/**/*.rs.bk
+services/rust/*.pdb
+services/rust/Cargo.lock
+
+# ==================================
+# C++ (cpp-httplib)
+# ==================================
+services/cpp/build/
+services/cpp/cmake-build-*/
+services/cpp/*.exe
+services/cpp/*.out
+services/cpp/*.app
+services/cpp/*.i*86
+services/cpp/*.x86_64
+services/cpp/*.hex
+services/cpp/CMakeCache.txt
+services/cpp/CMakeFiles
+services/cpp/CMakeScripts
+services/cpp/Testing
+services/cpp/Makefile
+services/cpp/cmake_install.cmake
+services/cpp/install_manifest.txt
+services/cpp/compile_commands.json
+services/cpp/CTestTestfile.cmake
+services/cpp/_deps
+services/cpp/*.o
+services/cpp/*.a
+services/cpp/*.so
+services/cpp/*.dylib
+services/cpp/*.dll
+
+# ==================================
+# Node.js (Fastify)
+# ==================================
+services/nodejs/node_modules/
+services/nodejs/npm-debug.log*
+services/nodejs/yarn-debug.log*
+services/nodejs/yarn-error.log*
+services/nodejs/lerna-debug.log*
+services/nodejs/.pnpm-debug.log*
+services/nodejs/.npm
+services/nodejs/.eslintcache
+services/nodejs/.stylelintcache
+services/nodejs/.node_repl_history
+services/nodejs/*.tgz
+services/nodejs/*.tar.gz
+services/nodejs/.yarn-integrity
+services/nodejs/.env.local
+services/nodejs/.env.development.local
+services/nodejs/.env.test.local
+services/nodejs/.env.production.local
+services/nodejs/.parcel-cache
+services/nodejs/.next
+services/nodejs/out
+services/nodejs/.nuxt
+services/nodejs/dist
+services/nodejs/.cache/
+services/nodejs/.vuepress/dist
+services/nodejs/.temp
+services/nodejs/.docusaurus
+services/nodejs/coverage
+services/nodejs/.nyc_output
+
+# ==================================
+# Docker 및 컨테이너 관련
+# ==================================
+.docker/
+docker-compose.override.yml
+.dockerignore
+*.dockerfile.backup
+docker-data/
+volumes/
+
+# ==================================
+# IDE 및 에디터
+# ==================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ==================================
+# 환경 설정 및 시크릿
+# ==================================
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.environment
+secrets/
+*.key
+*.pem
+*.p12
+*.pfx
+config/local.yml
+config/development.yml
+config/production.yml
+
+# ==================================
+# 로그 파일
+# ==================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log.*
+log-*.txt
+
+# ==================================
+# 임시 파일 및 캐시
+# ==================================
+tmp/
+temp/
+cache/
+.cache/
+*.tmp
+*.temp
+*.pid
+*.seed
+*.pid.lock
+*.tsbuildinfo
+
+# ==================================
+# 프로파일링 및 분석 도구
+# ==================================
+*.cpuprofile
+*.heaprofile
+*.heapsnapshot
+*.prof
+.nyc_output/
+coverage/
+*.gcov
+*.gcda
+*.gcno
+
+# ==================================
+# OS 관련
+# ==================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ==================================
+# 백업 파일
+# ==================================
+*.bak
+*.backup
+*.old
+*.orig
+*~
+
+# ==================================
+# 데이터베이스 파일 (개발용)
+# ==================================
+*.db
+*.sqlite
+*.sqlite3
+data/
+db-data/
+
+# ==================================
+# 테스트 결과
+# ==================================
+test-results/
+test-reports/
+junit.xml
+coverage.xml
+.coverage
+htmlcov/
+
+# ==================================
+# 패키지 매니저 락 파일 (선택적)
+# ==================================
+# package-lock.json  # npm 사용시 주석 해제
+# yarn.lock          # yarn 사용시 주석 해제
+# pnpm-lock.yaml     # pnpm 사용시 주석 해제
+
+# ==================================
+# 프로젝트별 커스텀
+# ==================================
+benchmark_data/
+performance_metrics/
+load_test_results/
+memory_dumps/
+execution_traces/

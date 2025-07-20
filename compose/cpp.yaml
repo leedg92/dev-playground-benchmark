@@ -1,7 +1,7 @@
 services:
   cpp-service:
     build:
-      context: ./services/cpp
+      context: ../services/cpp
       dockerfile: Dockerfile
     ports:
       - "8025:8080"

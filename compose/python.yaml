@@ -1,7 +1,7 @@
 services:
   python-service:
     build:
-      context: ./services/python
+      context: ../services/python
       dockerfile: Dockerfile
     ports:
       - "8022:8000"
